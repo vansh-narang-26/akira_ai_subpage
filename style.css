@@ -28,6 +28,12 @@ p {
     /* Above menu content */
 }
 
+@media(max-width:1440px) {
+    h1 {
+        font-size: 5rem !important;
+    }
+}
+
 .menu-overlay {
     display: none;
     position: fixed;
@@ -96,6 +102,7 @@ p {
 }
 
 .manufacturing-bar {
+    font-size: 16px !important;
     padding: 4px;
     border-radius: 20px;
     background-color: skyblue;
@@ -172,6 +179,11 @@ p {
         display: none;
         /* Hide regular menu */
     }
+
+    .navbar {
+        padding: 0px 40px;
+        justify-content: space-between;
+    }
 }
 
 
@@ -213,6 +225,13 @@ p {
     width: 80%;
 }
 
+@media (max-width:768px) {
+    .hero-heading h2 {
+        margin: 3rem 0 !important;
+        width: 100%;
+    }
+}
+
 .card-wrapper {
     margin-bottom: 20px;
     padding: 30px 16px;
@@ -226,6 +245,16 @@ p {
     /* Smooth transitions */
 }
 
+.card-wrapper h3 {
+    margin-top: 3rem !important;
+    font-family: 'work-sans-reular', sans-serif !important;
+
+}
+
+.cost-container {
+    margin-top: 4rem;
+}
+
 @media(max-width:767px) {
     .cost-container {
         display: flex;
@@ -234,8 +263,15 @@ p {
 }
 
 .card-wrapper p {
-    font-size: 1.6rem !important;
+    /* font-size: 1.6rem !important; */
     font-weight: 200;
+}
+
+@media(max-width:768px) {
+    /* .card-wrapper p {
+        font-size: 2.25rem !important;
+        font-weight: 200;
+    } */
 }
 
 .card-wrapper:hover {
@@ -323,6 +359,7 @@ p {
 
 .mid-banner-img img {
     height: 3.5rem;
+    min-height: 50px;
 }
 
 .mid-banner-pointers p {
@@ -335,9 +372,16 @@ p {
     padding: 6rem 12rem;
 }
 
+
 @media (max-width:1024px) {
     .second-mid-banner-wrapper {
         padding: 6rem 8rem;
+    }
+}
+
+@media (max-width:768px) {
+    .second-mid-banner-wrapper {
+        padding: 6rem 4rem;
     }
 }
 
@@ -367,6 +411,7 @@ p {
 }
 
 .second-mid-banner-left button {
+    font-size: 16px !important;
     margin-top: 6rem;
     padding: 0.7rem 1.5rem;
     color: #310400;
@@ -458,7 +503,7 @@ p {
 .use-cases-container {
     margin-top: 4rem;
     justify-content: space-between;
-    gap: 60px;
+    gap: 30px;
     display: flex;
 }
 
@@ -553,11 +598,12 @@ p {
 
 .use-case-left-upper h6 {
     width: 80%;
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin: 0 0 10px;
 }
 
 .left-down-img {
+    min-width: 30px;
     display: flex;
     align-items: start;
     justify-content: start;
@@ -581,10 +627,16 @@ p {
 }
 
 .use-case-left-down div {
-    align-items: start;
+    align-items: center;
     display: flex;
     justify-content: space-between;
     gap: 20px;
+}
+
+@media(min-width:1025px) {
+    .use-case-left-down div {
+        align-items: start;
+    }
 }
 
 .use-case-right {
@@ -595,6 +647,8 @@ p {
 @media (max-width:1024px) {
     .use-case-img {
         /* padding: 30px 40px; */
+        gap: 40px;
+        padding: 4rem 2rem;
         flex-direction: column;
     }
 
@@ -604,6 +658,11 @@ p {
 
     .use-case-left-down {
         width: 100%;
+    }
+
+    .use-case-left-down div {
+        gap: 5px;
+        justify-content: start;
     }
 
     .use-case-left-upper {
@@ -646,6 +705,7 @@ p {
 }
 
 .cta-buttons button {
+    font-size: 16px;
     border: 1px solid blue;
     border-radius: 12px;
     padding: 10px 40px;
@@ -667,6 +727,12 @@ p {
 
 .agent-container h2 {
     width: 60%;
+}
+
+@media (max-width:768px) {
+    .agent-container h2 {
+        width: 100%;
+    }
 }
 
 .agent-container h3 {
